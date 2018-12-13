@@ -1,5 +1,5 @@
 // tutorial1.js
-import {CalendarDoc} from 'primereact';
+//import {CalendarDoc} from 'primereact';
 
 var data = [
 	{ author: "Thimoty Hunt", text: "Questo è un commento", id: "1" },
@@ -116,10 +116,8 @@ class CommentForm extends React.Component {
 			<form className="commentForm" onSubmit={this.handleSubmit}>
 				<input type="text" placeholder="Il tuo nome" ref="author" />
 				<input type="text" placeholder="Di' qualcosa..." ref="text" />
-				<input type="submit" value="Invia" />
+				<input type="submit" value="Invia" />				
 			</form>
-			<Calendar dateFormat="dd/mm/yy" onChange={this.onChangeBasic}/>
-
 		);
 	}
 };
